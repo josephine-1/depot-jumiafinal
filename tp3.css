@@ -1,0 +1,290 @@
+body{
+    background-color:lightgray;
+    box-sizing: border-box;
+}
+*
+{
+  box-sizing: border-box;
+}
+#sec1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+  li a{
+     margin-left: 50px;
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    
+    
+  }
+
+  
+  /*  SEction numéro 2 */
+  #menu{
+    background-color: white;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+   margin-bottom: 1%;
+  }
+  
+  nav{
+    margin-left: 5%;
+  }
+  input{
+    height: 30px;
+    width: 300px;
+  }
+  #btn{
+    height: 35px;
+    background-color:darkorange;
+    border:1px solid darkorange;
+    border-radius:5% ;
+  }
+  /* End Section numéro 2 */
+  /* Section3 */
+  #sec3{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+   gap: 1rem;
+   width: 100%;
+    box-sizing: border-box;
+
+    
+   
+  }
+  /* Partie 2 du section numéro3 */
+  .P2{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+   
+  
+  }
+ 
+    /* Partie 3 du section numéro3 */
+  .P3{
+    
+   
+    box-sizing: border-box;
+   height: 400px;
+    width: 300px;
+  }
+  .top{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px;
+    border-radius: 10px;
+    width: 230px;
+    height: 209px;
+  }
+  .top i{
+    color: orange;
+    font-size: 20px;
+    border: 1px solid orange;
+    /* padding: 5px; */
+   /*  border-radius: 50%; */
+  }
+  .top p:hover{
+    color: orange;
+  }
+  .bottom img{
+    border: 1px;
+    border-radius: 10px;
+    width: 230px;
+    height: 180px;
+   
+  }
+ 
+  /* Partie 1 du section numéro3 */
+  #partie1 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  #partie1 li a{
+    margin-left: 20px;
+    /* margin-left:60px ; */
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    padding-top: 10px ;
+  
+  }
+
+ #partie1 li a:hover{
+color: orange;
+ }
+ ul :hover{
+  color: orange;
+ }
+  .fa-star{
+    color: orange;
+   
+    
+  }
+  .fa{
+   
+    margin: 5px;
+  }
+  #partie1{
+    width: 220px;
+    background-color: white;
+    height: 400px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 60px;
+   
+  }
+ 
+ 
+  /* Section 4 */
+   
+  
+  #conteneur{
+   
+    display: flex;
+    width: 160%;
+    transition: 2s; 
+    
+   
+  }
+   .mesImages img{
+    width: 120px;
+     margin: 10px; 
+  
+
+    
+  }
+  .mesImages{
+    
+    width:90%;
+    overflow-x: hidden;
+   
+    
+    
+   
+  }
+  footer{
+    margin: 7px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 99%;
+  }
+  #arrow1,#arrow2{
+   
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+  }
+  #arrow1{
+    left: 0;
+  }
+  #arrow2{
+    right: 0;
+  }
+  .mvt-right{
+    transform: translateX(-530px);
+  }
+  .mvt-left{
+    transform: translateX(0px);
+  }
+ /* media queries */
+  @media   (max-width:1200px) {
+    #partie1 {
+    background-color:brown;
+    margin-left: 0px;
+    width: auto; 
+   
+    /* width: 50%; */
+    }
+    #partie1 li a{
+      color:white;
+      font-weight: bold;
+    }
+   /*  #sec3{
+      flex-direction: column;
+    } */
+    header{
+      display: none;
+    }
+    #sec1{
+      display: none;
+    }
+    #menu{
+      flex-direction: column;
+      width: auto;
+     /*  width: auto; */
+      height: auto;
+
+    }
+    .P3{
+      display: none;
+    }
+     #sec3{
+     width: auto;
+     flex-direction: column;
+    
+    } 
+   /*  #partie1{
+      width: 50%;
+    } */
+    .logo img{
+      height: 30px;
+    }
+    footer{
+      width: auto;
+      height: auto;
+    }
+    .form input{
+      height: 20px;
+      width: 63%;
+     
+      
+    }
+    ::placeholder{
+      font-size: 15px;
+    }
+    .form #btn{
+      display: none;
+    }
+   #menu ul i{
+    display: none;
+   }
+   #menu ul a{
+    display: none;
+   }
+     .P2 img {
+      width: 100%;
+    } 
+    .P2{
+      height: 40%;
+      
+       width: auto; 
+      background-color: blue;
+     
+    
+    }
+  }
